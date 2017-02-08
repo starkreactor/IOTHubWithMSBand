@@ -46,9 +46,9 @@ namespace BandSpy
 		public void SetupDeviceForIoTHub()
 		{
 			// Retreive Settings stored on the device
-			Device.DeviceId = "bob";
-			Device.HostName = "biketeam.azure-devices.net";
-			Device.DeviceKey = "qc+CxYi+kiX/dPgUeqH1t/1ZsNWDcWwo1tsX9NsFmI4=";
+			Device.DeviceId = "YOURDEVICENAME";
+			Device.HostName = "YOURHOST.azure-devices.net";
+			Device.DeviceKey = "ENTER Your Key HERE";
 
 			// Add the telemetry data
 			Device.AddTelemetry(new TelemetryFormat { Name = "Location", DisplayName = "Location", Type = "string" }, "");
