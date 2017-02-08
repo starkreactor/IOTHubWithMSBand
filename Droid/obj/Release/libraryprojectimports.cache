@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Paths>
+  <Jars></Jars>
+  <ResolvedResourceDirectories>
+    <ResolvedResourceDirectory>/Users/michaelstark/Projects/BandSpy/Droid/obj/Release/__library_projects__/Xamarin.Forms.Platform.Android/library_project_imports/res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>/Users/michaelstark/Projects/BandSpy/Droid/obj/Release/__library_projects__/Xamarin.Forms.Platform/library_project_imports/res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>/Users/michaelstark/Projects/BandSpy/Droid/obj/Release/__library_projects__/Microsoft.Band.Android/library_project_imports/res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>/Users/michaelstark/Projects/BandSpy/Droid/obj/Release/__library_projects__/Microsoft.Band.Portable/library_project_imports/res</ResolvedResourceDirectory>
+  </ResolvedResourceDirectories>
+  <ResolvedAssetDirectories>
+    <ResolvedAssetDirectory>/Users/michaelstark/Projects/BandSpy/Droid/obj/Release/__library_projects__/Xamarin.Forms.Platform.Android/library_project_imports/assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>/Users/michaelstark/Projects/BandSpy/Droid/obj/Release/__library_projects__/Xamarin.Forms.Platform/library_project_imports/assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>/Users/michaelstark/Projects/BandSpy/Droid/obj/Release/__library_projects__/Microsoft.Band.Android/library_project_imports/assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>/Users/michaelstark/Projects/BandSpy/Droid/obj/Release/__library_projects__/Microsoft.Band.Portable/library_project_imports/assets</ResolvedAssetDirectory>
+  </ResolvedAssetDirectories>
+  <ResolvedEnvironmentFiles />
+  <ResolvedResourceDirectoryStamps>
+    <ResolvedResourceDirectoryStamp>/Users/michaelstark/Projects/BandSpy/Droid/obj/Release/__library_projects__/Xamarin.Forms.Platform.Android.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>/Users/michaelstark/Projects/BandSpy/Droid/obj/Release/__library_projects__/Xamarin.Forms.Platform.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>/Users/michaelstark/Projects/BandSpy/Droid/obj/Release/__library_projects__/Microsoft.Band.Android.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>/Users/michaelstark/Projects/BandSpy/Droid/obj/Release/__library_projects__/Microsoft.Band.Portable.stamp</ResolvedResourceDirectoryStamp>
+  </ResolvedResourceDirectoryStamps>
+</Paths>

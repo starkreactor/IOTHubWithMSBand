@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+		xmlns:local="clr-namespace:BandSpy;assembly=BandSpy" BackgroundColor="#1C57A5"
+		x:Class="BandSpy.BandPage">
+ <ContentPage.Resources>
+    <ResourceDictionary>
+
+      <!--- Base Colours-->
+      <Color x:Key="Slate">#4e5758</Color>
+      <Color x:Key="Green">#27B034</Color>
+      <Color x:Key="DarkSlate">#2C3E4F</Color>
+      <Color x:Key="BorderColor">#D1D1D1</Color>
+      <Color x:Key="ErrorColor">#FF0000</Color>
+      <Color x:Key="DarkMustard">#AB8524</Color>
+      <Color x:Key="Mustard">#F5BF34</Color>
+      <Color x:Key="MustardLight">#F6CF45</Color>
+      <Color x:Key="ReallyLightGrey">#F0F5F8</Color>
+      <Color x:Key="LightGrey">#CFCFCF</Color>
+      <Color x:Key="Blue">#3269E4</Color>
+      <Color x:Key="White">#FFFFFF</Color>
+      <!--Nationwide Colors-->
+      <Color x:Key="NWBlue">#3faae0</Color>
+      <Color x:Key="NWDarkBlue">#003B5C</Color>
+      <Color x:Key="NWDarkGreen">#36573B</Color>
+      <Color x:Key="NWLightGreen">#3A913F</Color>
+      <Color x:Key="NWAccentBlue">
+        #5BC6E8
+      </Color>
+      <Color x:Key="BlueyGrey">#a2b3bd</Color>
+      <Color x:Key="DarkGreyBlueTwo">#2a3c4e</Color>
+      <Color x:Key="SeatBlue">#41AADE</Color>
+      <Color x:Key="StrongPink">#ff0070</Color>
+      <Color x:Key="PurchasedGreen">#3FE078</Color>
+      <!--Named Colors-->
+      <Color x:Key="PlaceholderColor">Gray</Color>
+
+      <Style x:Key="PrimaryButtonStyle" TargetType="Button">
+        <Setter Property="HeightRequest" Value="50" />
+        <Setter Property="TextColor" Value="White" />
+        <Setter Property="BackgroundColor" Value="{DynamicResource NWDarkBlue}" />
+      </Style>
+      <Style x:Key="SecondaryButtonStyle" TargetType="Button">
+        <Setter Property="HeightRequest" Value="40" />
+        <Setter Property="TextColor" Value="White" />
+        <Setter Property="BackgroundColor" Value="{DynamicResource NWLightGreen}" />
+      </Style>
+      <Style x:Key="TertiaryButtonStyle" TargetType="Button">
+        <Setter Property="HeightRequest" Value="20" />
+        <Setter Property="TextColor" Value="White" />
+        <Setter Property="BackgroundColor" Value="{DynamicResource NWAccentBlue}" />
+      </Style>
+
+      <Style x:Key="buttonStyle" TargetType="Button">
+        <Setter Property="HorizontalOptions" Value="Center" />
+        <Setter Property="VerticalOptions" Value="CenterAndExpand" />
+        <Setter Property="BorderColor" Value="Lime" />
+        <Setter Property="BorderRadius" Value="5" />
+        <Setter Property="BorderWidth" Value="5" />
+        <Setter Property="WidthRequest" Value="200" />
+        <Setter Property="TextColor" Value="Red" />
+      </Style>
+
+    </ResourceDictionary>
+  </ContentPage.Resources>
+  <Grid Padding="0">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="20"  />
+      <RowDefinition Height="20" />
+      <RowDefinition Height="20" />
+      <RowDefinition Height="*" />
+      <RowDefinition Height="*" />
+      <RowDefinition Height="50" />
+      <RowDefinition Height="60" />
+      <RowDefinition Height="60" />
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="20" />
+      <ColumnDefinition Width="20" />
+      <ColumnDefinition Width="*" />
+      <ColumnDefinition Width="*" />
+      <ColumnDefinition Width="*" />
+      <ColumnDefinition Width="20" />
+      <ColumnDefinition Width="20" />
+    </Grid.ColumnDefinitions>
+    <Grid.HeightRequest>
+      <OnPlatform x:TypeArguments="x:Double"
+                       iOS="254"
+                     Android="284"
+                            />
+    </Grid.HeightRequest>
+    <StackLayout Grid.Row="1" Grid.Column="1"  Grid.ColumnSpan="3">
+      <Label Text="Heart Rate" FontSize="20" TextColor="White" HorizontalTextAlignment="Center"></Label>
+    </StackLayout>
+    <Label Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="3" Text="{Binding ConnectedBandName}" VerticalOptions="Center" TextColor="White" HorizontalOptions="Center"  />
+    <Label Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="3" x:Name="StatusMessage" Text="{Binding StatusMessage}"  TextColor="White"  HorizontalTextAlignment="Center"  />
+<!--    <local:IconFontLabel Grid.Row="2" Grid.Column="1"  Grid.ColumnSpan="3" x:Name="drowsyIcon" IconFont="f0d1" IconSize="130" Label.TextColor="#3A913F"></local:IconFontLabel>-->
+    <local:IconFontLabel Grid.Row="4" Grid.Column="3" Grid.ColumnSpan="2" x:Name="heartIcon" IconFont="f004" IconSize="90" Label.TextColor="Red" HorizontalTextAlignment="End" ></local:IconFontLabel>
+    <Label Grid.Row="4" Grid.Column="2" x:Name="HRVRate" Text="{Binding HeartRate}" TextColor="White" FontSize="70" HorizontalTextAlignment="Center"  />
+    <Button Grid.Row="6" Grid.Column="2" Grid.ColumnSpan="3" Text="Connect" x:Name="ButtonConnect"  Style="{StaticResource TertiaryButtonStyle}" ></Button>  
+    <Button Grid.Row="7" Grid.Column="2" Grid.ColumnSpan="3" Text="Send" x:Name="ButtonSend"  Style="{StaticResource TertiaryButtonStyle}" ></Button>  
+    <Button Grid.Row="5" Grid.Column="2" Grid.ColumnSpan="3" Text="Disconnect Band"   Clicked="StopClicked"  Style="{StaticResource TertiaryButtonStyle}" ></Button>  
+    <!-- -->
+  </Grid>
+
+</ContentPage>
